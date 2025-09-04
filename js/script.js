@@ -67,6 +67,23 @@ function setupWhatsAppButton() {
             this.style.transform = 'scale(1)';
         }, 150);
     });
+
+       const whatsappBtn2 = document.querySelector('.whatsapp-btn2');
+    
+    whatsappBtn2.addEventListener('click', function() {
+        // Aqui você pode adicionar o link do WhatsApp
+        const message = encodeURIComponent('Olá! Quero saber mais sobre o Segredo dos Sheiks para ganhar R$969 por dia!');
+        const whatsappUrl = `https://hosting.devluar.com/entraai/qBoI5BTC`;
+        
+        // Abre o WhatsApp em uma nova aba
+        window.open(whatsappUrl, '_blank');
+        
+        // Adiciona efeito visual
+        this.style.transform = 'scale(0.95)';
+        setTimeout(() => {
+            this.style.transform = 'scale(1)';
+        }, 150);
+    });
 }
 
 // Função para adicionar efeitos de entrada
