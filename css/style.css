@@ -1,0 +1,217 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f9fafc;
+  margin: 0;
+  padding: 0;
+  color: #222;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.header .star {
+  font-size: 2rem;
+  color: #f4c542;
+  margin-bottom: 10px;
+}
+
+/* Bandeira Árabe estilizada */
+.flag-container {
+  margin: 20px auto;
+  width: 320px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.flag-arab {
+  display: flex;
+  flex-direction: column;
+  height: 180px;
+}
+
+.flag-arab .stripe {
+  flex: 1;
+}
+
+.flag-arab .red {
+  background: #d62828;
+}
+
+.flag-arab .white {
+  background: #fff;
+}
+
+.flag-arab .black {
+  background: #000;
+}
+
+.flag-arab .green {
+  background: #007f3f;
+}
+
+/* Aviso expiração */
+.expiry-notice {
+  font-weight: bold;
+  margin: 15px 0;
+  font-size: 1.2rem;
+  color: #e63946;
+}
+
+.countdown {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.time-box {
+  background: #222;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 6px;
+  margin: 0 5px;
+}
+
+.separator {
+  font-weight: bold;
+  padding: 0 5px;
+}
+
+/* Aviso de vagas */
+.warning {
+  color: #e63946;
+  font-weight: bold;
+  margin: 15px 0;
+  font-size: 1rem;
+}
+
+/* Títulos */
+.main-title h1 {
+  font-size: 2rem;
+  margin: 15px 0;
+}
+
+.highlight-green {
+  color: #007f3f;
+  font-weight: bold;
+}
+
+.highlight-blue {
+  color: #0077b6;
+  font-weight: bold;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+  color: #444;
+}
+
+/* Botões */
+.cta-button {
+  margin: 20px 0;
+}
+
+.whatsapp-btn {
+  background: #25d366;
+  color: #fff;
+  border: none;
+  padding: 15px 25px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.whatsapp-btn:hover {
+  background: #20b954;
+}
+
+/* Testemunho */
+.testimonial {
+  margin: 30px 0;
+  position: relative;
+}
+
+.testimonial img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+}
+
+.testimonial-badge {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #007f3f;
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Label gratuito */
+.free-label {
+  margin-top: 15px;
+  font-weight: bold;
+  color: #007f3f;
+  font-size: 1.1rem;
+}
+
+
+/* Notificação */
+.notification {
+    position: fixed;
+    bottom: 1rem;
+    left: 1rem;
+    z-index: 50;
+    background: white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    border: 1px solid #e5e7eb;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    transform: translateY(100px) scale(0.8);
+    opacity: 0;
+    transition: all 0.5s ease-out;
+}
+
+.notification.show {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+}
+
+.notification.hide {
+    transform: translateY(20px) scale(0.9);
+    opacity: 0;
+}
+
+.notification-dot {
+    background: #10b981;
+    height: 0.75rem;
+    width: 0.75rem;
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+}
+
+.notification-text {
+    font-size: 0.875rem;
+    color: #374151;
+    margin: 0;
+}
+
+.hidden {
+    display: none;
+}
